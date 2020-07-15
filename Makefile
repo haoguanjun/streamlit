@@ -307,7 +307,7 @@ loc:
 # Distributes the package to PyPi
 distribute:
 	cd lib/dist; \
-		twine upload $$(ls -t *.whl | head -n 1)
+		twine upload $$(ls -t *.whl | head -n 1) --verbose
 
 .PHONY: notices
 # Rebuild the NOTICES file.
